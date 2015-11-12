@@ -7,10 +7,10 @@ app.config(['$stateProvider', function($stateProvider) {
       templateUrl: 'js/main/templates/home.tpl.html',
       controller: 'HomeCtrl'
     })
-    .state('app.about', {
-      url: '/about',
+    .state('app.articles', {
+      url: '/articles',
       templateUrl: 'js/main/templates/articles.tpl.html',
-      controller: 'AboutCtrl'
+      controller: 'ArticlesCtrl'
     })
     .state('app.contact', {
       url: '/contact',
