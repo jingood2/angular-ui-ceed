@@ -9,7 +9,7 @@ app.config(['$stateProvider', function($stateProvider) {
     })
     .state('app.about', {
       url: '/about',
-      templateUrl: 'js/main/templates/about.tpl.html',
+      templateUrl: 'js/main/templates/articles.tpl.html',
       controller: 'AboutCtrl'
     })
     .state('app.contact', {

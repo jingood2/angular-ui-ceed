@@ -93,7 +93,7 @@ Now browse to the app at `http://localhost:8000/app/index.html`.
           state.js      --> core state
         main/           --> main files
           controllers/  --> main controllers
-            AboutCtrl.js
+            ArticlesCtrl.js
             ContactCtrl.js
             HomeCtrl.js
           templates/    --> main templates

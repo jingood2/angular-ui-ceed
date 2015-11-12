@@ -20,6 +20,26 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
         text: '10 Locations for Nature Lovers!'
     }];
 
+    var baseURL2 ='http://lorempixel.com/200/200/';
+
+    $scope.content=[
+        {
+            img: baseURL2 + 'people',
+            title:'About Us',
+            summary: 'We are good, we are the best out there'
+        },
+        {
+            img: baseURL2 + 'business',
+            title:'Our Services',
+            summary: 'We offer advice on staying Healthly, What to eat...'
+        },
+        {
+            img: baseURL2 + 'transport',
+            title:'Contact Us',
+            summary: '#111, Good Health Blvd, Happy Place, Antartica'
+        }
+    ]
+
     /*
     $scope.myInterval = 5000;
     $scope.noWrapSlides = false;

@@ -1,6 +1,6 @@
 <uib-carousel interval="setInterval" no-wrap="noWrapSlides">
     <uib-slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <img ng-src="{{slide.image}}" style="margin:auto;width:100%">
         <div class="carousel-caption">
             <h4>{{slide.title}}</h4>
             <p>{{slide.text}}</p>
@@ -9,13 +9,24 @@
 </uib-carousel>
 
 <!--
-<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-    <uib-slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
-            <h4>Slide {{$index}}</h4>
-            <p>{{slide.text}}</p>
-        </div>
-    </uib-slide>
-</uib-carousel>
+<div class="jumbotron">
+    <h1>Welcome to Healthy Living</h1>
+    <p>This is a Rapid Prototype demo on how you can use AngularJS with Angular UI and Bootstrap to quickly</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
 -->
+</br>
+</br>
+
+<!-- Three columns of text below the carousel -->
+<div class="row-fluid">
+    <div class="col-md-4" ng-repeat="block in content">
+        <img class="img-circle center-block" ng-src="{{block.img}}">
+        <h3 class="text-center">{{block.title}}</h3>
+        <p class="text-center">{{block.summary}}</p>
+        <p class="text-center"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+</div>
+
+
+
